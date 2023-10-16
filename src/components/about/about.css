@@ -1,0 +1,22 @@
+.container-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: linear-gradient(
+        0deg,
+      rgba(32, 32 ,32 , 0.9),
+      rgba(32, 32, 32, 1)); */
+    color: var(--text-color);
+}
+
+.content-about{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+}
