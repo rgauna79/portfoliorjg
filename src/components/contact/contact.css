@@ -1,0 +1,27 @@
+.contact-main {
+    height: 100%;
+}
+
+.contact-title{
+    background-color: var(--accent-color);
+    color: whitesmoke;
+
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius:var(--border-radius);
+}
+
+.form-container{
+    padding: 1rem;
+    box-shadow: var(--box-shadow-light); 
+    border-radius:var(--border-radius);
+}
