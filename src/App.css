@@ -1,5 +1,6 @@
 :root{
     /* Colors */
+    --bg-color: #f4f5fb;
     --low-color: #eef2ff;
     --medium-color: #a5b4fc;
     --high-color: #6366f1;
@@ -20,7 +21,7 @@
 }
 
 body {
-    background-color: var(--low-color);
+    background-color: var(--bg-color);
     font-weight: 600;
     color: var(--text-color);
 }

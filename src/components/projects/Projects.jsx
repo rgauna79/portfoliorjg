@@ -73,31 +73,41 @@ const Projects = () => {
     <h1>Experience</h1>
         <div className="project-section">
             <h2 className="project-title">
-                FreeCodeCamp
+                Odin Projects
             </h2>
             <div className="project-content">
                 {Object.values(projectsVar['odinprojects']).map((element,index) => (
                     <div key={element.index} className="project-card">
                         <h4 key={index}>{element.name}</h4>
                         <hr></hr>
-                        <img src={element.image} alt={element.name} class="project-icons"></img>
+                        <img src={element.image} alt={element.name} class="project-img"></img>
                         <p key={index}>{element.content}</p>
-
+                        <div className="middle">
+                            <div className="project-links">
+                                <a href={element.code}>Code</a>
+                                <a href={element.live}>Live</a>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
         </div>
         <div className="project-section">
             <h2 className="project-title">
-                Odin Project
+                FreeCodeCamp Projects
             </h2>
             <div className="project-content">
                 {Object.values(projectsVar['freecodecamp']).map((element,index) => (
-                    <div key={element.index} className="project-card">
-                        <h4 key={index}>{element.name}</h4>
-                        <img src={element.image} alt={element.name} class="project-icons"></img>
-                        <p key={index}>{element.content}</p>
-
+                    <div key={index} className="project-card">
+                        <h4>{element.name}</h4>
+                        <img src={element.image} alt={element.name} class="project-img"></img>
+                        <p>{element.content}</p>
+                        <div className="middle">
+                            <div className="project-links">
+                                <a href={element.code}>Code</a>
+                                <a href={element.live}>Live</a>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
@@ -110,9 +120,14 @@ const Projects = () => {
                 {Object.values(projectsVar['personal']).map((element,index) => (
                     <div key={element.index} className="project-card">
                         <h4 key={index}>{element.name}</h4>
-                        <img src={element.image} alt={element.name} class="project-icons"></img>
+                        <img src={element.image} alt={element.name} class="project-img"></img>
                         <p key={index}>{element.content}</p>
-
+                        <div className="middle">
+                            <div className="project-links">
+                                <a href={element.code}>Code</a>
+                                <a href={element.live}>Live</a>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
