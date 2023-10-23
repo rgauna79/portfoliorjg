@@ -67,8 +67,8 @@ const Skills = () => {
                 </h2>
                 <div className="skills-content-card">
                     {Object.values(skillsFront).map((element,index) => (
-                        <div key={element.index} class="skills-icons">
-                            <img src={element.image} alt={element.name} class="img-icons"></img>
+                        <div key={index} className="skills-icons">
+                            <img src={element.image} alt={element.name} className="img-icons"></img>
                             <p key={index}>{element.name}</p>
                         </div>
                     ))}
@@ -80,8 +80,8 @@ const Skills = () => {
                 </h2>
                 <div className="skills-content-card">
                     {Object.values(skillsBack).map((element,index) => (
-                        <div key={element.index} class="skills-icons">
-                            <img src={element.image} alt={element.name} class="img-icons"></img>
+                        <div key={index} className="skills-icons">
+                            <img src={element.image} alt={element.name} className="img-icons"></img>
                             <p key={index}>{element.name}</p>
                         </div>
                     ))}
@@ -93,8 +93,8 @@ const Skills = () => {
                 </h2>
                 <div className="skills-content-card">
                     {Object.values(skillsTools).map((element,index) => (
-                        <div key={element.index} class="skills-icons">
-                            <img src={element.image} alt={element.name} class="img-icons"></img>
+                        <div key={index} className="skills-icons">
+                            <img src={element.image} alt={element.name} className="img-icons"></img>
                             <p key={index}>{element.name}</p>
                         </div>
                     ))}

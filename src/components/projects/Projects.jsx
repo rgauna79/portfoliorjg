@@ -6,7 +6,9 @@ import Calculator from './calculator.png';
 import RockPaperScissors from './rock-paper-scissors.png';
 import TicTacToe from './Tic-tac-toe.jpg';
 import VirtualLibrary from './library.png';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 
 const projectsVar = {
@@ -71,21 +73,24 @@ const Projects = () => {
     return (
     <section className='projects-main' id='projects'>
     <h1>Experience</h1>
+    
         <div className="project-section">
             <h2 className="project-title">
                 Odin Projects
             </h2>
             <div className="project-content">
-                {Object.values(projectsVar['odinprojects']).map((element,index) => (
+                {Object.values(projectsVar['odinprojects']).map((element) => (
                     <div key={element.index} className="project-card">
-                        <h4 key={index}>{element.name}</h4>
+                        <h4>{element.name}</h4>
                         <hr></hr>
-                        <img src={element.image} alt={element.name} class="project-img"></img>
-                        <p key={index}>{element.content}</p>
+                        <img src={element.image} alt={element.name} className="project-img"></img>
+                        <p>{element.content}</p>
                         <div className="middle">
                             <div className="project-links">
-                                <a href={element.code}>Code</a>
-                                <a href={element.live}>Live</a>
+                                <a href={element.code} target='_blank'><FontAwesomeIcon icon={faGithub} shake/></a>
+                                <a href={element.live} target='_blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                                <p>Code</p>
+                                <p>Live demo</p>
                             </div>
                         </div>
                     </div>
@@ -97,15 +102,17 @@ const Projects = () => {
                 FreeCodeCamp Projects
             </h2>
             <div className="project-content">
-                {Object.values(projectsVar['freecodecamp']).map((element,index) => (
-                    <div key={index} className="project-card">
+                {Object.values(projectsVar['freecodecamp']).map((element) => (
+                    <div className="project-card">
                         <h4>{element.name}</h4>
-                        <img src={element.image} alt={element.name} class="project-img"></img>
+                        <img src={element.image} alt={element.name} className="project-img"></img>
                         <p>{element.content}</p>
                         <div className="middle">
                             <div className="project-links">
-                                <a href={element.code}>Code</a>
-                                <a href={element.live}>Live</a>
+                                <a href={element.code} target='_blank'><FontAwesomeIcon icon={faGithub} shake/></a>
+                                <a href={element.live} target='_blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                                <p>Code</p>
+                                <p>Live demo</p>
                             </div>
                         </div>
                     </div>
@@ -117,15 +124,17 @@ const Projects = () => {
                 Personal Projects
             </h2>
             <div className="project-content">
-                {Object.values(projectsVar['personal']).map((element,index) => (
+                {Object.values(projectsVar['personal']).map((element) => (
                     <div key={element.index} className="project-card">
-                        <h4 key={index}>{element.name}</h4>
-                        <img src={element.image} alt={element.name} class="project-img"></img>
-                        <p key={index}>{element.content}</p>
+                        <h4>{element.name}</h4>
+                        <img src={element.image} alt={element.name} className="project-img"></img>
+                        <p>{element.content}</p>
                         <div className="middle">
                             <div className="project-links">
-                                <a href={element.code}>Code</a>
-                                <a href={element.live}>Live</a>
+                                <a href={element.code} target='_blank'><FontAwesomeIcon icon={faGithub} shake/></a>
+                                <a href={element.live} target='_blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                                <p>Code</p>
+                                <p>Live demo</p>
                             </div>
                         </div>
                     </div>

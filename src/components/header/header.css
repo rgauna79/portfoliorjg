@@ -38,3 +38,11 @@
     text-align: center;
     gap: 0.5rem;
 }
+.home-title > h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.home-title > h4 {
+    font-weight: 200;
+}

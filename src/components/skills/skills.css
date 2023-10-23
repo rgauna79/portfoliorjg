@@ -30,6 +30,7 @@
     gap: 2rem;
     padding-top: 1rem;
     height: 100%;
+    border: 1px solid var(--low-color);
 }
 
 .skills-content-card{
@@ -46,4 +47,8 @@
 
 .img-icons{
     width: 50px;
+}
+
+.img-icons:hover{
+    transform: scale(1.25);
 }
