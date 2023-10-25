@@ -36,7 +36,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="contact-main">
+    <section className="contact-main" id='contact'>
         <div className="form-container">
           <h2 className='contact-title'>Contact Me</h2>
           <form ref={refForm} onSubmit={handleSubmit} className="contact-form">

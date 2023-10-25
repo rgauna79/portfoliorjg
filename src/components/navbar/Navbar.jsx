@@ -22,19 +22,19 @@ const Navbar = () => {
     </div>
     <ul className={`navbar-links ${showMobileMenu ? 'show' : ''}`}>
       <li className="navbar-a-links">
-        <a href="#home">Home</a>
+        <a href="#home" onClick={toggleMobileMenu}>Home</a>
       </li>
       <li className="navbar-a-links">
-        <a href="#about">About</a>
+        <a href="#about" onClick={toggleMobileMenu}>About</a>
       </li>
       <li className="navbar-a-links">
-        <a href="#projects">Portfolio</a>
+        <a href="#projects" onClick={toggleMobileMenu}>Portfolio</a>
       </li>
       <li className="navbar-a-links">
-        <a href="#skills">Skills</a>
+        <a href="#skills" onClick={toggleMobileMenu}>Skills</a>
       </li>
       <li className="navbar-a-links">
-        <a href="">Contact</a>
+        <a href="#contact" onClick={toggleMobileMenu}>Contact</a>
       </li>
     </ul>
 

@@ -22,19 +22,20 @@
     max-width: 900px;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .img-header {
     
     border: 10px solid var(--accent-color);
     border-radius: 100%;
-    margin: 2rem;
+    /* margin: 2rem; */
 }
 
 .home-title{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     gap: 0.5rem;
 }

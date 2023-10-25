@@ -6,6 +6,7 @@ import Calculator from './calculator.png';
 import RockPaperScissors from './rock-paper-scissors.png';
 import TicTacToe from './Tic-tac-toe.jpg';
 import VirtualLibrary from './library.png';
+import ComingSoon from './coming-soon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -60,7 +61,7 @@ const projectsVar = {
         {
             name: 'Coming soon',
             content: 'coming soon',
-            image: '',
+            image: ComingSoon,
             live: '',
             code: ''
         },
