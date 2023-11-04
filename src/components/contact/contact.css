@@ -75,7 +75,7 @@ input, textarea {
 
 .social-media{
     display: flex;
-    width: 100%;
+    width: 100vw;
     margin-top: 2rem;
     padding: 1rem;
     background-color: var(--accent-color);
