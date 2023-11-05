@@ -26,6 +26,7 @@
     gap: 1rem;
     /* box-shadow: var(--box-shadow); */
     padding: 1rem;
+    justify-items: center;
     
 }
 .project-card{
@@ -36,8 +37,10 @@
     width: 100%;
     border: 1px solid var(--low-color);
     border-radius:var(--border-radius);
-    min-width: 250px;
-    min-height: 150px;
+    height: 350px;
+    width: 350px;
+    /* min-width: 250px;
+    min-height: 150px; */
     /* z-index: -1; */
 }   
 .project-section{
@@ -52,9 +55,6 @@
     height: 100%;
 }
 
-
-
-
 /* Projects Hover Links */
 .middle{
     /* width: 40%; */
@@ -67,12 +67,13 @@
     transition: .5s ease-in;
 }
 .project-img{
-    height: 80%;
+    height: 100%;
     display: block;
     opacity: 1;
     width:100%;
     transition: .5s ease-out;
     backface-visibility: hidden;
+    overflow: hidden;
 }
 
 .project-card:hover .project-img{
@@ -86,6 +87,7 @@
 .project-links{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+   
     column-gap: 2rem;
 }
 
@@ -99,12 +101,48 @@
 
 @media only screen and (min-width: 600px) {
     .project-content {
-        grid-template-columns:repeat(2,1fr)
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     .project-content {
-        grid-template-columns:repeat(3,1fr)
+        grid-template-columns:repeat(2,2fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .project-card{
+        /* width: 450px;
+        height: 450px; */
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .project-content {
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(1, 350px);
+    }
+}
+
+/* Animations */
+
+@keyframes cardanimation {
+
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .img-animation {
+        animation: cardanimation 1.5s 1;
     }
 }
