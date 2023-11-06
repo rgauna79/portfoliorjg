@@ -18,8 +18,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 22px;
 }
 
 body {

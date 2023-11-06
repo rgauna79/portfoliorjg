@@ -18,12 +18,14 @@
     transform: translateY(8px);
     z-index: -999;
     box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
     
 }
 .project-content{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    gap: 1rem;
+    grid-template-rows: 1fr;
+    gap: 2rem;
     /* box-shadow: var(--box-shadow); */
     padding: 1rem;
     justify-items: center;
@@ -37,12 +39,38 @@
     width: 100%;
     border: 1px solid var(--low-color);
     border-radius:var(--border-radius);
-    height: 350px;
-    width: 350px;
+     height: 100%; 
+    /* width: 330px; */
     /* min-width: 250px;
     min-height: 150px; */
     /* z-index: -1; */
-}   
+}
+
+.project-card-header {
+    border-radius: 10px 10px 0px 0px;
+    height: 10%;
+}
+
+.project-card-content {
+    display: flex;
+    align-items: center;
+    /* flex: 1; */
+    height: 350px;
+}
+
+.project-card-footer, .project-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+    background-color: var(--medium-color);
+}
+
+.project-card-footer    {
+    border-radius: 0px 0px 10px 10px;
+}
+
 .project-section{
     display: flex;
     /* border: 1px solid white; */
@@ -62,21 +90,29 @@
     opacity: 0;
     top: 50%;
     left: 50%;
+    background-color: var(--low-color);
     transform: translate(-50%, -50%);
 
     transition: .5s ease-in;
 }
+
+.project-description{
+    width:40%;
+}
+
 .project-img{
-    height: 100%;
+    padding: 1rem;
+    /* height: 100%; */
     display: block;
     opacity: 1;
-    width:100%;
+    width:60%;
     transition: .5s ease-out;
     backface-visibility: hidden;
     overflow: hidden;
+    border-radius: 1.5rem;
 }
 
-.project-card:hover .project-img{
+.project-card:hover .project-card-content {
     opacity: 0.1;
 }
 
@@ -95,9 +131,7 @@
     font-weight: bold;
 }
 
-.project-links > a {
 
-}
 
 @media only screen and (min-width: 600px) {
     .project-content {
@@ -108,21 +142,17 @@
 
 @media only screen and (min-width: 800px) {
     .project-content {
-        grid-template-columns:repeat(2,2fr);
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: 1fr;
     }
 
-    .project-card{
-        /* width: 450px;
-        height: 450px; */
-    }
 }
 
 
 @media only screen and (min-width: 1200px) {
     .project-content {
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows: repeat(1, 350px);
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: 1fr;
     }
 }
 

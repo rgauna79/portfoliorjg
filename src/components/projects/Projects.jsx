@@ -42,10 +42,17 @@ const Projects = () => {
             <div className="project-content">
                 {Object.values(projectsVar['odinprojects']).map((element, index) => (
                     <div key={index} className="project-card">
-                        <h4>{element.name}</h4>
-                        <hr></hr>
-                        <img src={element.image} alt={element.name} className="project-img"></img>
-                        <p>{element.content}</p>
+                        <div className="project-card-header">
+                            <h4>{element.name}</h4>
+                        </div>
+                        <div className="project-card-content">
+                            <p className='project-description'>{element.description}</p>
+                            <img src={element.image} alt={element.name} className="project-img"></img>
+                            
+                        </div>
+                        <div className="project-card-footer">
+                            <p>{element.content}</p>
+                        </div>
                         <div className="middle">
                             <div className="project-links">
                                 <a href={element.code} target='_blank'><FontAwesomeIcon icon={faGithub} shake/></a>
@@ -65,9 +72,16 @@ const Projects = () => {
             <div className="project-content">
                 {Object.values(projectsVar['freecodecamp']).map((element, index) => (
                     <div key={index} className="project-card">
-                        <h4>{element.name}</h4>
-                        <img src={element.image} alt={element.name} className="project-img"></img>
-                        <p>{element.content}</p>
+                        <div className="project-card-header">
+                            <h4>{element.name}</h4>
+                        </div>
+                        <div className="project-card-content">
+                            <p className='project-description'>{element.description}</p>
+                            <img src={element.image} alt={element.name} className="project-img"></img>
+                        </div>
+                        <div className="project-card-footer">
+                            <p>{element.content}</p>
+                        </div>
                         <div className="middle">
                             <div className="project-links">
                                 <a href={element.code} target='_blank'><FontAwesomeIcon icon={faGithub} shake/></a>
@@ -87,9 +101,16 @@ const Projects = () => {
             <div className="project-content">
                 {Object.values(projectsVar['personal']).map((element, index) => (
                     <div key={index} className="project-card">
-                        <h4>{element.name}</h4>
-                        <img src={element.image} alt={element.name} className="project-img"></img>
-                        <p>{element.content}</p>
+                        <div className="project-card-header">
+                            <h4>{element.name}</h4>
+                        </div>
+                        <div className="project-card-content">
+                            <p className='project-description'>{element.description}</p>
+                            <img src={element.image} alt={element.name} className="project-img"></img>
+                        </div>
+                        <div className="project-card-footer">
+                            <p>{element.content}</p>
+                        </div>
                         <div className="middle">
                             <div className="project-links">
                                 <a href={element.code} target='_blank'><FontAwesomeIcon icon={faGithub} shake/></a>
