@@ -6,7 +6,7 @@
         0deg,
       rgba(32, 32 ,32 , 0.9),
       rgba(32, 32, 32, 1)); */
-    color: var(--text-color);
+    color: var(--text-color-light);
 }
 
 .content-about{

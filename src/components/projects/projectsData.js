@@ -3,7 +3,7 @@ import Quotes from '/src/assets/img/quotes.png';
 import Calculator from '/src/assets/img/calculator.png';
 import RockPaperScissors from '/src/assets/img/rock-paper-scissors.png';
 import TicTacToe from '/src/assets/img/Tic-tac-toe.jpg';
-import VirtualLibrary from '/src/assets/img/library.png';
+import Weather from '/src/assets/img/weather.jpg';
 import ComingSoon from '/src/assets/img/coming-soon.png';
 import EtchASketch from '/src/assets/img/preview.png';
 import ToDoApp from '/src/assets/img/todo.png';
@@ -34,8 +34,8 @@ const projectsVar = {
         content: 'Html, CSS, JavaScript',
         description: 'Javascript calculator - Frecodecamp project',
         image: Calculator,
-        live: 'https://codepen.io/rgauna79/full/MWZowyE',
-        code: 'https://codepen.io/rgauna79/full/MWZowyE'  
+        live: 'https://github.com/rgauna79/React-calculator',
+        code: 'https://rgauna79.github.io/React-calculator/'  
         }
     ],
     odinprojects: [
@@ -70,12 +70,12 @@ const projectsVar = {
         live: 'https://rgauna79.github.io/rgauna79.github.com/Rock%20Paper%20Scissors',
         code: 'https://github.com/rgauna79/rgauna79.github.com/tree/master/Rock%20Paper%20Scissors'  
     },  {
-        name: 'Virtual Library',
+        name: 'Weather',
         content: 'Html, CSS, JavaScript',
-        description: 'App to store books for Odin projects',
-        image: VirtualLibrary,
-        live: 'https://rgauna79.github.io/rgauna79.github.com/Library/',
-        code: 'https://github.com/rgauna79/rgauna79.github.com/tree/master/Library'  
+        description: 'Weather app fetching data from API',
+        image: Weather,
+        code: 'https://github.com/rgauna79/weatherapp',
+        live: 'https://rgauna79.github.io/weatherapp/'  
     }
     ],
     personal: [

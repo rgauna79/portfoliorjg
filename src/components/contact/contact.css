@@ -6,8 +6,13 @@
     align-items: center;
     justify-content: center;
     /* margin-top: 4rem; */
+    padding: 0.5rem 0.5rem 0 0.5rem;
+
 }
 
+.contact-main > h1 {
+    color: var(--text-color-light);
+}
 .contact-title{
     background-color: var(--accent-color);
     color: whitesmoke;
@@ -20,14 +25,16 @@
 .form-container{
     /* display: flex; */
     /* flex-direction: column; */
+    /* background-color: var(--bg-card); */
     padding: 1rem;
     margin: 4rem 0;
     box-shadow: var(--box-shadow); 
     border-radius:var(--border-radius);
     border: 1px solid var(--low-color);
     max-width: 600px;
-    min-width: 300px;
-    
+    width: 100%;
+    min-width: 280px;
+    /* color: var(--text-color-light); */
 }
 
 .contact-form{
@@ -36,9 +43,11 @@
 }
 
 fieldset{
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius:var(--border-radius);
+    background-color: var(--bg-card);
+
 }
 
 #message{
@@ -47,12 +56,15 @@ fieldset{
 
 label {
     height: 20px;
-    
+    display: block;
+    margin-bottom: 0.5rem;
+    font-style: italic;
 }
 input, textarea {
     width: 100%;
     padding: 0.2rem;
     border-radius: var(--border-radius);
+    border: none;
 }
 
 #submit-contact{
@@ -63,11 +75,17 @@ input, textarea {
     padding: 0.2rem;
     border-radius: var(--border-radius);
     align-self: center;
+    border: none;
+    cursor: pointer;
 }
 
 #submit-contact:hover,
 #submit-contact:focus{
     background-color: var(--accent-color);
+}
+
+#submit-contact:active {
+    transform: scale(0.9);
 }
 
 .symbol-required::after {

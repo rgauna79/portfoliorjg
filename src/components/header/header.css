@@ -9,7 +9,7 @@
       rgba(32, 32 ,32 , 0.9),
       rgba(32, 32, 32, 1)),
         url('./thumb.png'); */
-    color: var(--text-color);
+    color: var(--text-color-light);
     background-size: cover;
     background-position: center;
     

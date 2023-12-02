@@ -1,13 +1,13 @@
 :root{
     /* Colors */
-    --bg-color: #f4f5fb;
+    --bg-color: #000000;
     --low-color: #eef2ff;
     --medium-color: #a5b4fc;
     --high-color: #6366f1;
     --accent-color: #4037c2;
     --text-color: #1e1b4b;
     --text-color-light: #eef2ff;
-    
+    --bg-card: lightgray;
 
     --box-shadow-light: 5px 5px 2px 0px rgba(0,0,0,0.3);
     --box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -24,10 +24,9 @@
 }
 
 body {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(246,246,246,0.969625350140056) 50%, rgba(228,232,235,1) 100%);
-    /* font-weight: 600; */
-    color: var(--text-color);
+    background-color: var(--bg-color);
+        /* font-weight: 600; */
+    color: var(--text-color-);
     /* min-width: 400px; */
 }
 
@@ -49,4 +48,5 @@ section {
     max-width: 1200px;
     align-self: center;
     width: 100%;
+   
 }
