@@ -20,3 +20,17 @@
     gap: 1rem;
     text-align: center;
 }
+
+.content-about > p {
+    font-style: italic;
+}
+
+.cv {
+    width: max-content !important;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.cv {
+    text-decoration: none;
+}

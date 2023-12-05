@@ -52,7 +52,7 @@ const Contact = () => {
               <label htmlFor="message" className='symbol-required' >Message</label>
               <textarea maxLength="500" name="message" id="message" cols="30" rows="10" placeholder='Insert your message'></textarea>
             </fieldset>
-            <button type="submit" value="" id="submit-contact" >Submit</button>
+            <button type="submit" value="" id="submit-contact" className='btn'>Submit</button>
             </form>
         </div>
 

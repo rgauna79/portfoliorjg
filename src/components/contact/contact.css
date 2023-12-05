@@ -67,26 +67,7 @@ input, textarea {
     border: none;
 }
 
-#submit-contact{
-    width:100px;
-    background-color: var(--high-color);
-    color: var(--text-color-light);
-    font-weight: bold;
-    padding: 0.2rem;
-    border-radius: var(--border-radius);
-    align-self: center;
-    border: none;
-    cursor: pointer;
-}
 
-#submit-contact:hover,
-#submit-contact:focus{
-    background-color: var(--accent-color);
-}
-
-#submit-contact:active {
-    transform: scale(0.9);
-}
 
 .symbol-required::after {
     content: ' *';

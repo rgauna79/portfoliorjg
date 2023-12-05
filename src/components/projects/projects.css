@@ -55,7 +55,6 @@
 
 .project-card-header {
     border-radius: 10px 10px 0px 0px;
-    height: 10%;
 }
 
 .project-card-content {
@@ -165,9 +164,7 @@
         grid-template-rows: repeat(1, 1fr);
     }
 
-    .project-card-footer {
-        font-size: 0.8rem;
-    }
+
 
     .project-img {
         height: 100%;
@@ -175,6 +172,12 @@
 
     .project-card {
         min-height: 300px;
+    }
+
+
+
+    body {
+        min-width: 400px;
     }
 }
 
@@ -184,20 +187,22 @@
         grid-template-rows: 1fr;
     }
     .project-card {
-        min-height: 200px;
+        min-height: 240px;
     }
 
-}
-
-@media only screen and (max-width: 500px) {
-    
     .project-description {
         font-size: 0.8rem;        
     }
-    body {
-        min-width: 400px;
+    .project-card-footer {
+        font-size: 0.8rem;
     }
+
 }
+
+/* @media only screen and (max-width: 500px) {
+    
+
+} */
 
 @media only screen and (min-width: 1200px) {
     .project-content {
