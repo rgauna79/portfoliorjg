@@ -26,7 +26,7 @@
 }
 
 .img-header {
-    
+    height: 200px;
     border: 10px solid var(--accent-color);
     border-radius: 100%;
     /* margin: 2rem; */
