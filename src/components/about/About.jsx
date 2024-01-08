@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import urlCV from '/src/assets/documents/Cv-1223.pdf';
+import urlCV from '/src/assets/documents/Cv-0124.pdf';
 
 
 const About = () => {
