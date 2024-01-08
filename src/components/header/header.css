@@ -60,15 +60,17 @@
   }
   
   .copied-message {
-    display: none;
+    
+    visibility: hidden;
     font-size: 12px;
     color: #4CAF50;
     transition: opacity 0.5s;
   }
   
   .copied-message.show {
-    display: block;
+    
     opacity: 1;
+    visibility: visible;
   }
 
   .btn-copy {
