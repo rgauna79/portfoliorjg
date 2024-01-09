@@ -1,16 +1,20 @@
+// projects.jsx
+
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-
-import { skillsBack, skillsFront, skillsTools } from "../../assets/icons";
-import projectsVar from "./projectsData";
-import "./projects.css";
+// import {
+//   faGithub,
+//   faArrowUpRight,
+// } from "@fortawesome/free-brands-svg-icons";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import ProjectCard from "../ui/ProjectCard/ProjectCard";
+import { skillsBack, skillsFront, skillsTools } from "../../assets/icons";
+import projectsVar from "./projectsData";
+import "./projects.css";
 
 const Projects = () => {
   const options = {
@@ -36,73 +40,43 @@ const Projects = () => {
     };
   }, []);
 
+  const getImageSkill = (skill) => {
+    const allSkills = { ...skillsFront, ...skillsBack, ...skillsTools };
+    return allSkills[skill.toLowerCase()]?.image || "";
+  };
+
   const renderProjectCards = (category) => {
     const settings = {
-        dots: true,
-        fade: true,
-        // adaptiveHeight: true,
-        centerMode: true,
-        centerPadding: "10px",
-    }
-    return ( 
-    
-    <Slider {...settings}>
-    {Object.values(projectsVar[category]).map((element, index) => (
+      dots: true,
+      fade: true,
+      centerMode: true,
+      centerPadding: "10px",
+    };
 
-      <div key={index} className="project-card">
-        <div className="project-card-header">
-          <h4>{element.name}</h4>
-        </div>
-        <div className="project-card-content">
-          <p className="project-description">{element.description}</p>
-          <img
-            src={element.image}
-            alt={element.name}
-            className="project-img"
-          ></img>
-        </div>
-        <div className="project-card-footer">
-          <p>Techs used: </p>
-          {element.content.split(", ").map((skill, skillIndex) => (
-            <img
-              key={skillIndex}
-              src={getImageSkill(skill)}
-              alt={skill}
-              className="skill-img"
-            />
-          ))}
-        </div>
-        <div className="middle">
-          <div className="project-links">
-            <a href={element.code} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} shake />
-            </a>
-            <a href={element.live} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </a>
-            <p>Code</p>
-            <p>Live demo</p>
-          </div>
-        </div>
-      </div>
-    ))}
-    </Slider>
+    return (
+      <Slider {...settings}>
+        {Object.values(projectsVar[category]).map((project, index) => (
+          <ProjectCard
+            key={index}
+            project={project}
+            getImageSkill={getImageSkill}
+          />
+        ))}
+      </Slider>
     );
   };
 
   return (
     <section className="projects-main" id="projects">
       <h1>Experience</h1>
-        
-        <div className="project-section">
+
+      <div className="project-section">
         <h2 className="project-title">Personal Projects</h2>
-        <div className="project-content">
-            {renderProjectCards("personal")}</div>
+        <div className="project-content">{renderProjectCards("personal")}</div>
       </div>
       <div className="project-section">
         <h2 className="project-title">Odin Projects</h2>
         <div className="project-content">
-            
           {renderProjectCards("odinprojects")}
         </div>
       </div>
@@ -112,14 +86,8 @@ const Projects = () => {
           {renderProjectCards("freecodecamp")}
         </div>
       </div>
-       
     </section>
   );
 };
-
-function getImageSkill(skill) {
-  const allSkills = { ...skillsFront, ...skillsBack, ...skillsTools };
-  return allSkills[skill.toLowerCase()]?.image || "";
-}
 
 export default Projects;
