@@ -14,18 +14,57 @@ export const skillsFront = {
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
-  bootstrap: {
-    name: "Bootstrap",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  },
+  
   react: {
     name: "React",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
+  bootstrap: {
+    name: "Bootstrap",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  },
+  Tailwind: {
+    name: "Tailwind",
+    image:
+      " https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+  },
+ 
 };
 export const skillsBack = {
+  
+  php: {
+    name: "Php",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+  },
+  laravel: {
+    name: "Laravel",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original-wordmark.svg",
+  },
+  mysql: {
+    name: "MySql",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+  },
+  nodejs: {
+    name: "NodeJs",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+  },
+  express: {
+    name: "Express",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+ 
+  mongodb: {
+    name: "MongoDb",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+  },
   python: {
     name: "Python",
     image:
@@ -35,31 +74,6 @@ export const skillsBack = {
     name: "Django",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
-  },
-  php: {
-    name: "Php",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-  },
-  elixir: {
-    name: "Elixir",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg",
-  },
-  mongodb: {
-    name: "MongoDb",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-  },
-  express: {
-    name: "Express",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-  },
-  nodejs: {
-    name: "NodeJs",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
   },
 };
 export const skillsTools = {

@@ -81,18 +81,18 @@
   justify-content: center;
   /* width: fit-content; */
   height: 100%;
-  padding: 0 1rem;
+  padding: 0.2rem;
 }
 
 .project-img {
   height: 100%;
   width: 100%;
   /* flex: 1; */
-  padding: 1rem;
+  padding: 0.2rem;
   transition: 0.5s ease-out;
   backface-visibility: hidden;
   overflow: hidden;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 /* .project-card:hover .project-card-content {
@@ -122,6 +122,11 @@
 .project-links > a {
   color: var(--text-color-light);
   z-index: 10;
+}
+
+.project-links > a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 600px) {

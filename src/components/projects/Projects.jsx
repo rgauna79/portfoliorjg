@@ -52,7 +52,6 @@ const Projects = () => {
       centerMode: true,
       centerPadding: "10px",
     };
-
     return (
       <Slider {...settings}>
         {Object.values(projectsVar[category]).map((project, index) => (
@@ -68,24 +67,22 @@ const Projects = () => {
 
   return (
     <section className="projects-main" id="projects">
-      <h1>Experience</h1>
 
       <div className="project-section">
         <h2 className="project-title">Personal Projects</h2>
         <div className="project-content">{renderProjectCards("personal")}</div>
       </div>
       <div className="project-section">
-        <h2 className="project-title">Odin Projects</h2>
+        <h2 className="project-title">Mini Projects</h2>
         <div className="project-content">
-          {renderProjectCards("odinprojects")}
+          {renderProjectCards("miniproject")}
         </div>
-      </div>
-      <div className="project-section">
-        <h2 className="project-title">FreeCodeCamp Projects</h2>
         <div className="project-content">
-          {renderProjectCards("freecodecamp")}
+          {/* {renderProjectCards("freecodecamp")} */}
         </div>
+        
       </div>
+
     </section>
   );
 };

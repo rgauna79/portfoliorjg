@@ -8,10 +8,21 @@ import ComingSoon from "/src/assets/img/coming-soon.png";
 import EtchASketch from "/src/assets/img/preview.png";
 import ToDoApp from "/src/assets/img/todo.png";
 import TaskManager from "/src/assets/img/TaskManager.png";
+import MagicPrint from "/src/assets/img/magicprint.jpg";
+import Excelreader from "/src/assets/img/Excelreader.jpg";
 
 //Projects
 const projectsVar = {
   personal: [
+    {
+      name: "Ecommerce website",
+      content: "laravel, php, mysql",
+      description:
+        "Laravel Ecommerce for MagicPrint shop",
+      image: MagicPrint,
+      live: "#",
+      code: "https://github.com/rgauna79/printshop",
+    },
     {
       name: "MERN task manager",
       content: "mongodb, Express, React, NodeJs",
@@ -21,34 +32,27 @@ const projectsVar = {
       live: "https://taskmanager-15ow.onrender.com/",
       code: "https://github.com/rgauna79/taskmanager",
     },
-  ],
-  freecodecamp: [
+    
     {
-      name: "Markdown Live Preview",
-      content: "Html, CSS, JavaScript, React",
-      description: "Markdown editor with live preview, Frecodecamp project",
-      image: Markdown,
-      live: "https://codepen.io/rgauna79/pen/qBLqmEO",
-      code: "https://codepen.io/rgauna79/pen/qBLqmEO",
+      name: "Excel file Reader",
+      content: "React, mongodb, express",
+      description:
+        "Excel file reader, display data, filter, generate reports",
+      image: Excelreader,
+      live: "",
+      code: "https://github.com/rgauna79/data-navigator",
     },
     {
-      name: "Random quotes",
-      content: "Html, CSS, JavaScript, React",
-      description: "Random quote generator, Frecodecamp project",
-      image: Quotes,
-      live: "https://codepen.io/rgauna79/full/BavLepV",
-      code: "https://codepen.io/rgauna79/full/BavLepV",
-    },
-    {
-      name: "Javascript calculator",
+      name: "Weather",
       content: "Html, CSS, JavaScript",
-      description: "Javascript calculator - Frecodecamp project",
-      image: Calculator,
-      live: "https://github.com/rgauna79/React-calculator",
-      code: "https://rgauna79.github.io/React-calculator/",
+      description: "Weather app fetching data from API",
+      image: Weather,
+      code: "https://github.com/rgauna79/weatherapp",
+      live: "https://rgauna79.github.io/weatherapp/",
     },
   ],
-  odinprojects: [
+  
+  miniproject: [
     {
       name: "Etch A Sketch",
       content: "Html, CSS, JavaScript",
@@ -84,12 +88,28 @@ const projectsVar = {
       code: "https://github.com/rgauna79/rgauna79.github.com/tree/master/Rock%20Paper%20Scissors",
     },
     {
-      name: "Weather",
+      name: "Javascript calculator",
       content: "Html, CSS, JavaScript",
-      description: "Weather app fetching data from API",
-      image: Weather,
-      code: "https://github.com/rgauna79/weatherapp",
-      live: "https://rgauna79.github.io/weatherapp/",
+      description: "Javascript calculator - Frecodecamp project",
+      image: Calculator,
+      live: "https://github.com/rgauna79/React-calculator",
+      code: "https://rgauna79.github.io/React-calculator/",
+    },
+    {
+      name: "Markdown Live Preview",
+      content: "Html, CSS, JavaScript, React",
+      description: "Markdown editor with live preview, Frecodecamp project",
+      image: Markdown,
+      live: "https://codepen.io/rgauna79/pen/qBLqmEO",
+      code: "https://codepen.io/rgauna79/pen/qBLqmEO",
+    },
+    {
+      name: "Random quotes",
+      content: "Html, CSS, JavaScript, React",
+      description: "Random quote generator, Frecodecamp project",
+      image: Quotes,
+      live: "https://codepen.io/rgauna79/full/BavLepV",
+      code: "https://codepen.io/rgauna79/full/BavLepV",
     },
   ],
 };
