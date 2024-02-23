@@ -18,18 +18,18 @@ const projectsVar = {
       name: "Ecommerce website",
       content: "laravel, php, mysql",
       description:
-        "Laravel Ecommerce for MagicPrint shop",
+        "Laravel Ecommerce for MagicPrint shop, CMS admin and user panel to handle products, orders, sales",
       image: MagicPrint,
       live: "#",
       code: "https://github.com/rgauna79/printshop",
     },
     {
-      name: "MERN task manager",
+      name: "Task Manager",
       content: "mongodb, Express, React, NodeJs",
       description:
-        "Full Stack App : Backend API, User authentication, Tasks CRUD",
+        "Full Stack App for Task Manager: API, user authentication, Basic CRUD for users and tasks",
       image: TaskManager,
-      live: "https://taskmanager-15ow.onrender.com/",
+      live: "https://task-manager-rjg.netlify.app/",
       code: "https://github.com/rgauna79/taskmanager",
     },
     
@@ -37,9 +37,9 @@ const projectsVar = {
       name: "Excel file Reader",
       content: "React, mongodb, express",
       description:
-        "Excel file reader, display data, filter, generate reports",
+        "Excel file reader, display data, filter, generate reports, user authentication, store excel data in mongodb",
       image: Excelreader,
-      live: "",
+      live: "https://data-navigator-client.onrender.com",
       code: "https://github.com/rgauna79/data-navigator",
     },
     {
