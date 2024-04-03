@@ -7,18 +7,17 @@
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    background-color: var(--accent-color);
-    color: white;
-    padding: 1.5rem;
-    width: 100%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    z-index: 1000;
-    overflow: hidden;
-    min-width: 400px;
-    transition: transform 0.3s ease-in-out;
-
+  position: fixed;
+  top: 0;
+  background: linear-gradient(135deg, var(--accent-color), var(--text-color));
+  color: white;
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  overflow: hidden;
+  min-width: 400px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar.hidden {
@@ -26,92 +25,91 @@
 }
 
 .navbar-links {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    overflow: hidden;
-    /* max-height: 0; */
-    transition: max-height 0.3s ease;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  overflow: hidden;
+  /* max-height: 0; */
+  transition: max-height 0.3s ease;
+  justify-content: flex-end;
 }
 
 .navbar-links.show {
-    max-height: 1000px;
-    /* transition: max-height 0.3s ease; */
-  } 
+  max-height: 1000px;
+  /* transition: max-height 0.3s ease; */
+}
 
-  .show .navbar-links{
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
+.show .navbar-links {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
 
 .navbar-a-links {
-    opacity: 1;
-    /* transform: translateY(-10px); */
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    text-align: center;
+  opacity: 1;
+  /* transform: translateY(-10px); */
+  padding-left: 5px;
+  padding-right: 5px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  text-align: center;
 }
 
 .navbar-a-links:hover {
-    background-color: var(--medium-color);
+  background-color: var(--medium-color);
 }
 
-
 .navbar-a-links > a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .navbar-hamburger {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-    /* Hide navigation links */
-    .navbar-links {
-        flex-direction: column;
-        overflow: hidden;
-        transition: none;
-        max-height: 0;
-        /* transform:translateX(100%); */
-        /* padding-bottom: 10px; */
-      }
-    .navbar-links.show {
-        max-height: none;
-        transition: none;
-      }
-      .show .navbar-links {
-        opacity: 1;
-        transform: translateY(0);
-        transition: none;
-      }
-    
-      .show .navbar-a-links {
-        opacity: 1;
-        transform: none;
-        transition: none;
-        padding-left: 0;
-        text-align: right;
-        margin-top: 5px;
-      }
-    
-      .navbar-hamburger {
-        display: block;
-        text-align: right;
-      }
+  /* Hide navigation links */
+  .navbar-links {
+    flex-direction: column;
+    overflow: hidden;
+    transition: none;
+    max-height: 0;
+    /* transform:translateX(100%); */
+    /* padding-bottom: 10px; */
+  }
+  .navbar-links.show {
+    max-height: none;
+    transition: none;
+  }
+  .show .navbar-links {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .show .navbar-a-links {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    padding-left: 0;
+    text-align: right;
+    margin-top: 5px;
+  }
+
+  .navbar-hamburger {
+    display: block;
+    text-align: right;
+  }
 }
 @media screen and (max-width: 768px) {
-    /* Hide navigation links */
-    .navbar-hamburguer {
-        display: none;
-    }
+  /* Hide navigation links */
+  .navbar-hamburguer {
+    display: none;
+  }
 }
-
-
-
-

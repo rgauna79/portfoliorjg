@@ -18,21 +18,22 @@ const projectsVar = {
       name: "Ecommerce website",
       content: "laravel, php, mysql",
       description:
-        "Laravel Ecommerce for MagicPrint shop, CMS admin and user panel to handle products, orders, sales",
+        "Magic Print is a dynamic e-commerce solution built with Laravel. It integrates a robust backend control panel with a user-friendly frontend interface. Key features include user management, product and order management, as well as customer management.",
       image: MagicPrint,
-      live: "#",
+      live: "https://magic-print.up.railway.app/",
       code: "https://github.com/rgauna79/printshop",
     },
+
     {
       name: "Task Manager",
       content: "mongodb, Express, React, NodeJs",
       description:
-        "Full Stack App for Task Manager: API, user authentication, Basic CRUD for users and tasks",
+        "Full Stack App for Task Manager: API, user authentication, Basic CRUD for users and tasks.",
       image: TaskManager,
       live: "https://task-manager-rjg.netlify.app/",
       code: "https://github.com/rgauna79/taskmanager",
     },
-    
+
     {
       name: "Excel file Reader",
       content: "React, mongodb, express",
@@ -51,8 +52,8 @@ const projectsVar = {
       live: "https://rgauna79.github.io/weatherapp/",
     },
   ],
-  
-  miniproject: [
+
+  miniprojects: [
     {
       name: "Etch A Sketch",
       content: "Html, CSS, JavaScript",
@@ -87,30 +88,30 @@ const projectsVar = {
       live: "https://rgauna79.github.io/rgauna79.github.com/Rock%20Paper%20Scissors",
       code: "https://github.com/rgauna79/rgauna79.github.com/tree/master/Rock%20Paper%20Scissors",
     },
-    {
-      name: "Javascript calculator",
-      content: "Html, CSS, JavaScript",
-      description: "Javascript calculator - Frecodecamp project",
-      image: Calculator,
-      live: "https://github.com/rgauna79/React-calculator",
-      code: "https://rgauna79.github.io/React-calculator/",
-    },
-    {
-      name: "Markdown Live Preview",
-      content: "Html, CSS, JavaScript, React",
-      description: "Markdown editor with live preview, Frecodecamp project",
-      image: Markdown,
-      live: "https://codepen.io/rgauna79/pen/qBLqmEO",
-      code: "https://codepen.io/rgauna79/pen/qBLqmEO",
-    },
-    {
-      name: "Random quotes",
-      content: "Html, CSS, JavaScript, React",
-      description: "Random quote generator, Frecodecamp project",
-      image: Quotes,
-      live: "https://codepen.io/rgauna79/full/BavLepV",
-      code: "https://codepen.io/rgauna79/full/BavLepV",
-    },
+    // {
+    //   name: "Javascript calculator",
+    //   content: "Html, CSS, JavaScript",
+    //   description: "Javascript calculator - Frecodecamp project",
+    //   image: Calculator,
+    //   live: "https://github.com/rgauna79/React-calculator",
+    //   code: "https://rgauna79.github.io/React-calculator/",
+    // },
+    // {
+    //   name: "Markdown Live Preview",
+    //   content: "Html, CSS, JavaScript, React",
+    //   description: "Markdown editor with live preview, Frecodecamp project",
+    //   image: Markdown,
+    //   live: "https://codepen.io/rgauna79/pen/qBLqmEO",
+    //   code: "https://codepen.io/rgauna79/pen/qBLqmEO",
+    // },
+    // {
+    //   name: "Random quotes",
+    //   content: "Html, CSS, JavaScript, React",
+    //   description: "Random quote generator, Frecodecamp project",
+    //   image: Quotes,
+    //   live: "https://codepen.io/rgauna79/full/BavLepV",
+    //   code: "https://codepen.io/rgauna79/full/BavLepV",
+    // },
   ],
 };
 

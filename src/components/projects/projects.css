@@ -15,26 +15,40 @@
 }
 
 .project-title {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg, var(--accent-color), var(--text-color));
   color: whitesmoke;
   transform: translateY(8px);
   z-index: -999;
   box-shadow: var(--box-shadow-light);
   border-radius: var(--border-radius);
+  width: 100%;
+  padding: 0.2rem;
+  text-align: center;
 }
 
 .project-content {
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
   gap: 1rem;
   padding: 0.5rem;
   justify-items: center;
   margin-top: 0.5rem;
+  max-width: 900px;
 }
 
 .project-section {
   text-align: center;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--bg-color-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-light);
+  padding: 0.5rem;
 }
 
 @media only screen and (max-width: 600px) {

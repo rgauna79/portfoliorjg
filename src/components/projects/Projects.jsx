@@ -1,15 +1,6 @@
 // projects.jsx
 
 import React, { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faGithub,
-//   faArrowUpRight,
-// } from "@fortawesome/free-brands-svg-icons";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import ProjectCard from "../ui/ProjectCard/ProjectCard";
 import { skillsBack, skillsFront, skillsTools } from "../../assets/icons";
@@ -29,60 +20,42 @@ const Projects = () => {
     });
   };
 
-  const observer = new IntersectionObserver(callback, options);
-
   useEffect(() => {
+    const observer = new IntersectionObserver(callback, options);
     const targets = document.querySelectorAll(".project-card");
     targets.forEach((img) => observer.observe(img));
 
     return () => {
       targets.forEach((img) => observer.unobserve(img));
     };
-  }, []);
+  }, [options]);
 
   const getImageSkill = (skill) => {
     const allSkills = { ...skillsFront, ...skillsBack, ...skillsTools };
     return allSkills[skill.toLowerCase()]?.image || "";
   };
 
-  const renderProjectCards = (category) => {
-    const settings = {
-      dots: true,
-      fade: true,
-      centerMode: true,
-      centerPadding: "10px",
-    };
+  const renderProjectSection = (category) => {
     return (
-      <Slider {...settings}>
-        {Object.values(projectsVar[category]).map((project, index) => (
-          <ProjectCard
-            key={index}
-            project={project}
-            getImageSkill={getImageSkill}
-          />
-        ))}
-      </Slider>
+      <div className="project-section">
+        <h2 className="project-title">{category.toUpperCase()}</h2>
+        <div className="project-content">
+          {Object.values(projectsVar[category]).map((project, index) => (
+            <ProjectCard
+              key={index}
+              project={project}
+              getImageSkill={getImageSkill}
+            />
+          ))}
+        </div>
+      </div>
     );
   };
 
   return (
     <section className="projects-main" id="projects">
-
-      <div className="project-section">
-        <h2 className="project-title">Personal Projects</h2>
-        <div className="project-content">{renderProjectCards("personal")}</div>
-      </div>
-      <div className="project-section">
-        <h2 className="project-title">Mini Projects</h2>
-        <div className="project-content">
-          {renderProjectCards("miniproject")}
-        </div>
-        <div className="project-content">
-          {/* {renderProjectCards("freecodecamp")} */}
-        </div>
-        
-      </div>
-
+      {renderProjectSection("personal")}
+      {renderProjectSection("miniprojects")}
     </section>
   );
 };

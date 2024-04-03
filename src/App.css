@@ -1,73 +1,71 @@
-:root{
-    /* Colors */
-    --bg-color: #000000;
-    --low-color: #eef2ff;
-    --medium-color: #a5b4fc;
-    --high-color: #6366f1;
-    --accent-color: #4037c2;
-    --text-color: #1e1b4b;
-    --text-color-light: #eef2ff;
-    --bg-card: lightgray;
+:root {
+  /* Colors */
+  --bg-color: #000000;
+  --low-color: #eef2ff;
+  --medium-color: #a5b4fc;
+  --high-color: #6366f1;
+  --accent-color: #4037c2;
+  --text-color: #1e1b4b;
+  --text-color-light: #eef2ff;
+  --bg-card: lightgray;
 
-    --box-shadow-light: 5px 5px 2px 0px rgba(0,0,0,0.3);
-    --box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    --border-radius: 10px;
+  --box-shadow-light: 5px 5px 2px 0px rgba(0, 0, 0, 0.3);
+  --box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  --border-radius: 10px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: 'Kanit', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 22px;
 }
 
 body {
-    background-color: var(--bg-color);
-        /* font-weight: 600; */
-    color: var(--text-color-);
-    /* min-width: 400px; */
+  background-color: var(--bg-color);
+  /* font-weight: 600; */
+  color: var(--text-color-);
+  /* min-width: 400px; */
 }
 
 h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-h2{
-    font-size: 1.2rem;
+h2 {
+  font-size: 1.2rem;
 }
 .container-root {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 section {
-    height: 100vh;
-    max-width: 1200px;
-    align-self: center;
-    width: 100%;
-   
+  height: 100vh;
+  max-width: 1200px;
+  align-self: center;
+  width: 100%;
 }
 
 .btn {
-    width:100px;
-    background-color: var(--high-color);
-    color: var(--text-color-light);
-    font-weight: bold;
-    padding: 0.2rem;
-    border-radius: var(--border-radius);
-    align-self: center;
-    border: none;
-    cursor: pointer;
+  width: 100px;
+  background: linear-gradient(135deg, var(--high-color), var(--accent-color));
+  color: var(--text-color-light);
+  font-weight: bold;
+  padding: 0.2rem;
+  border-radius: var(--border-radius);
+  align-self: center;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover,
-.btn:focus{
-    background-color: var(--accent-color);
+.btn:focus {
+  background: linear-gradient(135deg, var(--accent-color), var(--text-color));
 }
 
 .btn:active {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }

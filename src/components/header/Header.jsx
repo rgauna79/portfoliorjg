@@ -6,15 +6,19 @@ import { faCopy } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isCopied, setIsCopied] = useState(false);
+  const email = "rgauna@gmail.com";
 
   const handleCopyToClipboard = () => {
     const emailElement = document.getElementById("email");
-    const range = document.createRange();
-    range.selectNode(emailElement);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
+    const emailToCopy = emailElement.getAttribute("data-email");
+
+    const tempInput = document.createElement("input");
+    tempInput.value = emailToCopy;
+    document.body.appendChild(tempInput);
+    tempInput.select();
     document.execCommand("copy");
-    window.getSelection().removeAllRanges();
+    document.body.removeChild(tempInput);
+
     setIsCopied(true);
 
     // Reset the "Copied!" message after a short delay
@@ -30,13 +34,15 @@ const Header = () => {
         <div className="home-title">
           <h1>Roberto Gauna</h1>
           <h4>Software Engineer</h4>
-          <div className="email-container"> 
-            <h5>
-              <em id="email">rgauna@gmail.com</em>
+          <div className="email-container">
+            <h6>
+              <em id="email" data-email={email}>
+                contact me!
+              </em>
               <button onClick={handleCopyToClipboard} className="btn-copy">
                 <FontAwesomeIcon icon={faCopy} />
               </button>
-            </h5>
+            </h6>
             <div className={`copied-message ${isCopied ? "show" : ""}`}>
               <p>Email copied!</p>
             </div>

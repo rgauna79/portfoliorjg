@@ -1,79 +1,76 @@
 .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    /* background-color: black; */
-    /* background-image: linear-gradient(
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  /* background-color: black; */
+  /* background-image: linear-gradient(
         360deg,
       rgba(32, 32 ,32 , 0.9),
       rgba(32, 32, 32, 1)),
         url('./thumb.png'); */
-    color: var(--text-color-light);
-    background-size: cover;
-    background-position: center;
-    
+  color: var(--text-color-light);
+  background-size: cover;
+  background-position: center;
 }
 
-.content-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 900px;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.content-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .img-header {
-    height: 200px;
-    border: 10px solid var(--accent-color);
-    border-radius: 100%;
-    /* margin: 2rem; */
+  height: 200px;
+  border: 5px solid var(--accent-color);
+  border-radius: 100%;
+  /* margin: 2rem; */
 }
 
-.home-title{
-    display: flex;
-    flex-direction: column;
-    /* padding: 20px; */
-    text-align: center;
-    gap: 0.5rem;
+.home-title {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  text-align: center;
+  gap: 0.5rem;
 }
 .home-title > h1 {
-    font-size: 1.8rem;
-    font-weight: 900;
+  font-size: 1.8rem;
+  font-weight: 900;
 }
 
 .home-title > h4 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .email-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .email-container button {
-    margin-left: 8px;
-    cursor: pointer;
-  }
-  
-  .copied-message {
-    
-    visibility: hidden;
-    font-size: 12px;
-    color: #4CAF50;
-    transition: opacity 0.5s;
-  }
-  
-  .copied-message.show {
-    
-    opacity: 1;
-    visibility: visible;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .btn-copy {
-    border-radius: 8px;
-    padding: 2px;
-  }
+.email-container button {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.copied-message {
+  visibility: hidden;
+  font-size: 12px;
+  color: #4caf50;
+  transition: opacity 0.5s;
+}
+
+.copied-message.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-copy {
+  border-radius: 8px;
+  padding: 2px;
+}
