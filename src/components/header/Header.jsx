@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import logo from "./Me.jpg";
+import photo from "../../assets/img/Roberto.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 
@@ -30,7 +31,7 @@ const Header = () => {
   return (
     <section className="container" id="home">
       <div className="content-header">
-        <img className="img-header" src={logo} alt="personal photo" />
+        <img className="img-header" src={photo} alt="personal photo" />
         <div className="home-title">
           <h1>Roberto Gauna</h1>
           <h4>Software Engineer</h4>
