@@ -9,7 +9,8 @@ import EtchASketch from "/src/assets/img/preview.png";
 import ToDoApp from "/src/assets/img/todo.png";
 import TaskManager from "/src/assets/img/TaskManager.png";
 import MagicPrint from "/src/assets/img/magicprint.jpg";
-import Excelreader from "/src/assets/img/Excelreader.jpg";
+import Excelreader from "/src/assets/img/Excelreader.png";
+import Moviesearch from "/src/assets/img/Moviesearch.png";
 
 //Projects
 const projectsVar = {
@@ -43,14 +44,22 @@ const projectsVar = {
       live: "https://data-navigator-client.onrender.com",
       code: "https://github.com/rgauna79/data-navigator",
     },
-    {
-      name: "Weather",
-      content: "Html, CSS, JavaScript",
-      description: "Weather app fetching data from API",
-      image: Weather,
-      code: "https://github.com/rgauna79/weatherapp",
-      live: "https://rgauna79.github.io/weatherapp/",
+        {
+      name: "Movie Search",
+      content: "Html, CSS, React, JavaScript",
+      description: "Movie Search app using React, fetching data from API",
+      image: Moviesearch,
+      code: "https://github.com/rgauna79/moviesearchengine",
+      live: "https://moviesearch-rjg.netlify.app/",
     },
+    // {
+    //   name: "Weather",
+    //   content: "Html, CSS, JavaScript",
+    //   description: "Weather app fetching data from API",
+    //   image: Weather,
+    //   code: "https://github.com/rgauna79/weatherapp",
+    //   live: "https://rgauna79.github.io/weatherapp/",
+    // },
   ],
 
   miniprojects: [
@@ -58,23 +67,23 @@ const projectsVar = {
       name: "Etch A Sketch",
       content: "Html, CSS, JavaScript",
       description:
-        "Etch A Skecth game emulation made in JavaScript for Odin projects",
+        "Etch A Skecth game emulation made in JavaScript",
       image: EtchASketch,
       live: "https://rgauna79.github.io/EtchASketch/",
       code: "https://github.com/rgauna79/EtchASketch",
     },
-    {
-      name: "To-Do App",
-      content: "Html, CSS, JavaScript",
-      description: "App to manage list of task to do for Odin projects",
-      image: ToDoApp,
-      live: "https://rgauna79.github.io/ToDoApp/",
-      code: "https://github.com/rgauna79/ToDoApp",
-    },
+    // {
+    //   name: "To-Do App",
+    //   content: "Html, CSS, JavaScript",
+    //   description: "App to manage list of task to do for Odin projects",
+    //   image: ToDoApp,
+    //   live: "https://rgauna79.github.io/ToDoApp/",
+    //   code: "https://github.com/rgauna79/ToDoApp",
+    // },
     {
       name: "Tic Tac Toe Game",
       content: "Html, CSS, JavaScript",
-      description: "Tradional game of Tic Tac Toe for Odin projects",
+      description: "Tradional game of Tic Tac Toe",
       image: TicTacToe,
       live: "https://rgauna79.github.io/rgauna79.github.com/Tic%20Tac%20Toe/",
       code: "https://github.com/rgauna79/rgauna79.github.com/tree/master/Tic%20Tac%20Toe",
@@ -83,7 +92,7 @@ const projectsVar = {
       name: "Rock Paper Scissors",
       content: "Html, CSS, JavaScript",
       description:
-        "Rock Paper Scissors game to play versus Computer for Odin projects",
+        "Rock Paper Scissors game to play versus Computer",
       image: RockPaperScissors,
       live: "https://rgauna79.github.io/rgauna79.github.com/Rock%20Paper%20Scissors",
       code: "https://github.com/rgauna79/rgauna79.github.com/tree/master/Rock%20Paper%20Scissors",
