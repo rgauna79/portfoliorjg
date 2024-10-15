@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import logo from "./Me.jpg";
-import photo from "../../assets/img/Roberto.png"
+import photo from "../../assets/img/Roberto.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,6 +35,9 @@ const Header = () => {
         <div className="home-title">
           <h1>Roberto Gauna</h1>
           <h4>Software Engineer</h4>
+          <p>Technologies:</p>
+          <p>React, Express, MongoDB, Laravel, SQL and more</p>
+
           <div className="email-container">
             <h6>
               <em id="email" data-email={email}>

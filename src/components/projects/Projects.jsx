@@ -55,7 +55,7 @@ const Projects = () => {
   return (
     <section className="projects-main" id="projects">
       {renderProjectSection("personal")}
-      {renderProjectSection("miniprojects")}
+      {/* {renderProjectSection("miniprojects")} */}
     </section>
   );
 };

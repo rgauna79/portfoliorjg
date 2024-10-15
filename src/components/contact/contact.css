@@ -25,7 +25,8 @@
   /* flex-direction: column; */
   /* background-color: var(--bg-card); */
   padding: 1rem;
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
+  margin-bottom: 1rem;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   border: 1px solid var(--low-color);
@@ -69,27 +70,4 @@ textarea {
 .symbol-required::after {
   content: " *";
   color: #620404;
-}
-
-/* Footer */
-
-.social-media {
-  display: flex;
-  width: 100vw;
-  margin-top: 2rem;
-  padding: 1rem;
-  background: linear-gradient(135deg, var(--accent-color), var(--text-color));
-  color: white;
-  justify-content: space-around;
-}
-
-.social-media > ul {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-}
-
-.social-media-a-links > a {
-  text-decoration: none;
-  color: white;
 }

@@ -51,11 +51,11 @@
   padding: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body {
     min-width: 400px;
   }
-}
+} */
 
 @media only screen and (min-width: 800px) {
   /* Additional styles for larger screens if needed */

@@ -25,9 +25,7 @@
 
 body {
   background-color: var(--bg-color);
-  /* font-weight: 600; */
   color: var(--text-color-);
-  /* min-width: 400px; */
 }
 
 h1 {
@@ -47,6 +45,8 @@ section {
   max-width: 1200px;
   align-self: center;
   width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .btn {
