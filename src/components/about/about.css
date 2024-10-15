@@ -1,36 +1,36 @@
 .container-about {
-    display: flex;
+  /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* background: linear-gradient(
+    justify-content: center; */
+  /* background: linear-gradient(
         0deg,
       rgba(32, 32 ,32 , 0.9),
       rgba(32, 32, 32, 1)); */
-    color: var(--text-color-light);
+  color: var(--text-color-light);
 }
 
-.content-about{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    max-width: 900px;
-    width: 100%;
-    justify-content: center;
-    padding: 2rem;
-    gap: 1rem;
-    text-align: center;
+.content-about {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: center;
 }
 
 .content-about > p {
-    font-style: italic;
+  font-style: italic;
 }
 
 .cv {
-    width: max-content !important;
-    text-align: center;
-    font-size: 0.8rem;
+  width: max-content !important;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 .cv {
-    text-decoration: none;
+  text-decoration: none;
 }

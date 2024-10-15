@@ -8,19 +8,17 @@ import projectsVar from "./projectsData";
 import "./projects.css";
 
 const Projects = () => {
-  const options = {
-    threshold: 0.1,
-  };
-
-  const callback = (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("img-animation");
-      }
-    });
-  };
-
   useEffect(() => {
+    const options = { threshold: 0.1 };
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("img-animation");
+        }
+      });
+    };
+
     const observer = new IntersectionObserver(callback, options);
     const targets = document.querySelectorAll(".project-card");
     targets.forEach((img) => observer.observe(img));
@@ -28,7 +26,7 @@ const Projects = () => {
     return () => {
       targets.forEach((img) => observer.unobserve(img));
     };
-  }, [options]);
+  }, []);
 
   const getImageSkill = (skill) => {
     const allSkills = { ...skillsFront, ...skillsBack, ...skillsTools };
@@ -42,7 +40,7 @@ const Projects = () => {
         <div className="project-content">
           {Object.values(projectsVar[category]).map((project, index) => (
             <ProjectCard
-              key={index}
+              key={project.id}
               project={project}
               getImageSkill={getImageSkill}
             />
@@ -54,7 +52,7 @@ const Projects = () => {
 
   return (
     <section className="projects-main" id="projects">
-      {renderProjectSection("personal")}
+      {renderProjectSection("projects")}
       {/* {renderProjectSection("miniprojects")} */}
     </section>
   );

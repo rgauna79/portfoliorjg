@@ -14,8 +14,9 @@ import Moviesearch from "/src/assets/img/Moviesearch.png";
 
 //Projects
 const projectsVar = {
-  personal: [
+  projects: [
     {
+      id: 1,
       name: "Ecommerce website",
       content: "laravel, php, mysql",
       description:
@@ -24,8 +25,8 @@ const projectsVar = {
       live: "https://magic-print.up.railway.app/",
       code: "https://github.com/rgauna79/printshop",
     },
-
     {
+      id: 2,
       name: "Task Manager",
       content: "mongodb, Express, React, NodeJs",
       description:
@@ -34,8 +35,8 @@ const projectsVar = {
       live: "https://task-manager-rjg.netlify.app/",
       code: "https://github.com/rgauna79/taskmanager",
     },
-
     {
+      id: 3,
       name: "Excel file Reader",
       content: "React, mongodb, express",
       description:
@@ -45,6 +46,7 @@ const projectsVar = {
       code: "https://github.com/rgauna79/data-navigator",
     },
     {
+      id: 4,
       name: "Movie Search",
       content: "Html, CSS, React, JavaScript",
       description: "Movie Search app using React, fetching data from API",
@@ -52,6 +54,7 @@ const projectsVar = {
       code: "https://github.com/rgauna79/moviesearchengine",
       live: "https://moviesearch-rjg.netlify.app/",
     },
+
     // {
     //   name: "Weather",
     //   content: "Html, CSS, JavaScript",

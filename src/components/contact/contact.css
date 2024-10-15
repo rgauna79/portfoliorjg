@@ -1,7 +1,7 @@
 .contact-main {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -70,4 +70,10 @@ textarea {
 .symbol-required::after {
   content: " *";
   color: #620404;
+}
+
+@media (max-width: 900px) {
+  .contact-main {
+    height: 100%;
+  }
 }

@@ -35,8 +35,8 @@ const Header = () => {
         <div className="home-title">
           <h1>Roberto Gauna</h1>
           <h4>Software Engineer</h4>
-          <p>Technologies:</p>
-          <p>React, Express, MongoDB, Laravel, SQL and more</p>
+          {/* <p>Technologies:</p>
+          <p>React, Express, MongoDB, Laravel, SQL and more</p> */}
 
           <div className="email-container">
             <h6>

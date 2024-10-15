@@ -1,14 +1,11 @@
-// ProjectCard.jsx
-
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import "./projectcard.css"; // Import the CSS for styling
+import "./projectcard.css";
 
 const ProjectCard = ({ project, getImageSkill }) => {
   const renderSkills = (content) => {
